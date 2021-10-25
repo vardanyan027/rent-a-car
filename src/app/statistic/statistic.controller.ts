@@ -8,7 +8,7 @@ export class StatisticController {
     }
 
     @Get()
-    getById(@Query() data) {
+    get(@Query() data) {
         if (data.car_id) {
             return this.statisticService.getById(data.car_id);
         }
